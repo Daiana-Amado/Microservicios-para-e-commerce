@@ -15,8 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/productos")
 public class ProductoController {
     
-    @Autowired
-    ProductoService produServ;
+    @Autowired ProductoService produServ;
     
     @PostMapping("/save")
     public String saveProducto(@RequestBody Producto produ){
